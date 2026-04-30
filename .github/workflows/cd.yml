@@ -38,3 +38,5 @@ jobs:
           file: ./frontend/Dockerfile
           push: true
           tags: ghcr.io/leinonen96/task-manager-frontend:latest
+          build-args: |
+            VITE_API_URL=${{ vars.VITE_API_URL }}
