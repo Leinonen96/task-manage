@@ -29,7 +29,7 @@ jobs:
           context: .
           file: ./backend/Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/task-manager-backend:latest
+          tags: ghcr.io/leinonen96/task-manager-backend:latest
 
       - name: Build and push Frontend
         uses: docker/build-push-action@v5
@@ -37,4 +37,4 @@ jobs:
           context: .
           file: ./frontend/Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/task-manager-frontend:latest
+          tags: ghcr.io/leinonen96/task-manager-frontend:latest
