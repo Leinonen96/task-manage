@@ -41,6 +41,6 @@ jobs:
         working-directory: ./frontend
         run: npm run test:frontend --if-present
 
-      # Task 3: Security
+      # Task 3: Security Checks
       - name: Run NPM Audit
         run: npm audit --audit-level=high
